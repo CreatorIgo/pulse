@@ -2,8 +2,62 @@
         min-height: 650px;
         padding: 21px 0 93px 0;
         background: url(../img/main.jpg) center (center/cover) no-repeat;
+    
+        &__wrapper{
+            margin-top: 91px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        &__header{
+            font-size: 42px;
+            font-weight: 700;            
+            text-align: right;
+            line-height: 42px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        &__subheader{
+            margin-top: 17px;
+            font-size: 24px;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-align: right;
+            line-height: 17px;
+            color: #fff;
+        }        
+        // иконки с надписями сделаем флексами и выравняем
+        &__icons{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 65px;
+            width: 430px;
+        }    
+        &__icon{
+            width: 108px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 14px;
+            text-align: center;
+            color: #fff;
+            img{
+                display: block;
+                margin: 0 auto 20px;
+            }
+        }
+        &__link{                        // текст будет выравнен по правому краю т.к сво-во flex-endß
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff;
+            margin-top: 18px;
+            a{
+                color: #fff;
+                text-decoration: underline;
+                text-transform: uppercase;
+            }
+        }
     }
-
 // .promo {
 //     min-height: 650px;
 //     padding: 21px 0 93px 0;
