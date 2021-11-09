@@ -1,36 +1,76 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &__logo {
-        width: 250px;
-        img {
-            width: 100%;
-        }
-    }
-    &__official {
-        color: #ffffff;
-        font-size: 12px;
-        font-weight: 500;
-        text-align: center;
-        span {
-            display: block;
-            font-size: 18px;
-        }
-    }
-    &__phone {
-        display: block;
-        color: #ffffff;
-        font-size: 18px;
-        font-weight: 700;
-        &:hover {
-            color: #fff;
-            text-decoration: none;
-        }
-    }
-    &__contacts {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
-}
+	 
+	 // стилизация шапки на экране promo
+	.header {  
+		display: flex;  							// блоки шапки  разместим с помощью флексов
+		justify-content: space-between;
+		align-items: center;
+		&__logo {
+			width: 250px ;							// картинка логотип
+			img{									
+				width: 100%;						// займет всю ширину (если в будущем поместим другую картинку)
+			}
+		}
+		&__official{
+			font-size: 12px;
+			font-weight: 500;
+			text-align: center;
+			color: #fff;		
+			span{			
+				display: block;						// чтобы перености текст на след строку
+				font-size: 18px;
+			}
+		}
+		&__phone{									// телефон - гиперссылка		
+			display: block;
+			font-size: 18px;
+			font-weight: 700;
+			text-align: right;
+			color: #fff;
+			&:hover{								// наведение мыши на гиперссылку
+				text-decoration: none;              // убрать подсветку 
+				color: #fff;					  // обычный текст
+			}
+		}
+		&__contacts{                                // элемент контактов 
+			display: flex;							// разместим флексами	
+			flex-direction: column;					// колонками
+			align-items: flex-end;					// прижмем колоку к правому краю
+		}
+	} 
+
+// .header {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     &__logo {
+//         width: 250px;
+//         img {
+//             width: 100%;
+//         }
+//     }
+//     &__official {
+//         color: #ffffff;
+//         font-size: 12px;
+//         font-weight: 500;
+//         text-align: center;
+//         span {
+//             display: block;
+//             font-size: 18px;
+//         }
+//     }
+//     &__phone {
+//         display: block;
+//         color: #ffffff;
+//         font-size: 18px;
+//         font-weight: 700;
+//         &:hover {
+//             color: #fff;
+//             text-decoration: none;
+//         }
+//     }
+//     &__contacts {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: flex-end;
+//     }
+// }

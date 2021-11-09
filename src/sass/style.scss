@@ -2,12 +2,17 @@
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
-.container {
-    max-width: 950px;
-    margin: 0 auto;
+
+//  синтаксис scss: ставим скобки и точки запятые  
+
+//  поместим все в один контейнер т.к. все элементы размещаются в 10 колонок
+.container {            
+    max-width: 950px;     //    ширина контейнера
+    margin: 0 auto;       //    ровняем контейнер по центру
 }
-@import 'blocks/promo';
-@import 'blocks/header.scss';
-@import 'blocks/buttons';
-@import 'blocks/advantages';
-@import 'blocks/titles';
+ // подключение файлов стилей
+ @import 'blocks/promo';           // первый общий экран блок promo
+ @import 'blocks/header.scss';     // шапка на блоке promo
+ @import 'blocks/buttons';
+// @import 'blocks/advantages';
+// @import 'blocks/titles';
