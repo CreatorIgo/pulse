@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-
+/slick-1.8.1
 # testing
 /coverage
 

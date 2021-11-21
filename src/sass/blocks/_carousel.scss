@@ -1,0 +1,26 @@
+.carousel {
+    padding: 82px 0;    
+    &__inner {
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+    }  
+    .slick-prev, .slick-next {
+        position: absolute;             // ддля позиционирования стрелок посередине слайдера
+        top: 50%;                       // устанаивливаем стрелки посередине родительского блока
+        transform: translateY(-50%);     // сдвигаем по оси Y на пол высоты кнопки-стрелки (центрируем)
+        left: -70px;
+        border: none;
+        background-color: #fff;                 // задний фон картинки сделаем белый (на нектороых браузерах Firefox может отображаться другим цветом)
+        outline: none;
+        img {
+            width: 31px;
+            height: 50px;
+        }
+    }
+    .slick-next{
+        right: -70px;
+        left: auto;       // сброса свойств позиционирования дочернего элемента следует использовать конструкцию left: auto
+    }
+  
+}
