@@ -5,8 +5,8 @@
         width: 750px;
         margin: 0 auto;
     }  
-    //[data-controls = 'prev'], [data-controls = next]      // доступ через дата атрибуты стандартных кнопок
-    .prev, .next {
+    //[data-controls = 'prev'], [data-controls = next]      // доступ через дата атрибуты стандартных кнопок 
+    .slick-prev, .slick-next {
         position: absolute;             // ддля позиционирования стрелок посередине слайдера
         top: 50%;                       // устанаивливаем стрелки посередине родительского блока
         transform: translateY(-50%);     // сдвигаем по оси Y на пол высоты кнопки-стрелки (центрируем)
@@ -19,25 +19,25 @@
             height: 50px;
         }
     }
-    //[data-controls = next]
-    .next {
+    //[data-controls = next]    
+    .slick-next {
         right: -70px;
         left: auto;       // сброса свойств позиционирования дочернего элемента следует использовать конструкцию left: auto
     }
 
-    .tns-item {
-        img {
-            display: block;
-            margin: 0 auto;
-        }
-    }
-    .tns-nav {
-        button {
-            background-color: red;
-        }
-        .tns-nav-active {
-                background-color: blue;
-        }
-    }
+    // .tns-item {
+    //     img {
+    //         display: block;
+    //         margin: 0 auto;
+    //     }
+    // }
+    // .tns-nav {
+    //     button {
+    //         background-color: red;
+    //     }
+    //     .tns-nav-active {
+    //             background-color: blue;
+    //     }
+    // }
   
 }
